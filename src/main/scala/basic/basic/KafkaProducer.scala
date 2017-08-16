@@ -17,7 +17,6 @@ object KafkaProducer extends App{
 
   val done = Source(1 to 10)
     .map { n =>
-      // val partition = math.abs(n) % 2
       val partition = 0
       ProducerMessage.Message(new ProducerRecord[Array[Byte], String](
         "topic1", partition, null, n.toString
