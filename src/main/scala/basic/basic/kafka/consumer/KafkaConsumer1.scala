@@ -11,7 +11,7 @@ import org.apache.kafka.common.serialization.{ByteArrayDeserializer, StringDeser
 /**
   * Created by marksu on 8/31/16.
   */
-object CommittableSourceConsumerMain extends App {
+object KafkaConsumer1 extends App {
 
   implicit val system = ActorSystem("CommittableSourceConsumerMain")
   implicit val materializer = ActorMaterializer()
